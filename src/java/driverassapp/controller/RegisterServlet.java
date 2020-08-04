@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package driverassapp.model;
+package driverassapp.controller;
 
 import driverassapp.controller.ConnectionPro;
+import driverassapp.model.User;
+import driverassapp.model.UserDatabase;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;

@@ -1,0 +1,3 @@
+In a Java context, the Model consists of simple Java classes, the Controller consists of servlets and the View consists of JSP pages. 
+Here're some key features of the pattern: It separates the presentation layer from the business layer. 
+The Controller performs the action of invoking the Model and sending data to View.
