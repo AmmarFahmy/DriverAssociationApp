@@ -32,11 +32,11 @@
                     <input type="text" placeholder="Address" name="address" required>
                     
                     <p>Date of Birth</p>
-                    <input type="text" name="dob" required>
+                    <input type="date" name="dob" required>
                     
                     <p>Date of Registration</p>
-                    <input type="text" name="register">
-<!--                    <input type="date" name="register" id="theDate" readonly>-->
+<!--                    <input type="text" name="register">-->
+                    <input type="date" name="register" id="theDate" readonly>
                     
                     <p>Password</p>
                     <input type="password" placeholder="Password" name="password" required>
