@@ -74,6 +74,7 @@ body {
 }
 
 .box input[type="text"],
+.box input[type="email"],
 .box input[type="date"],
 .box input[type="password"] {
     border: none;

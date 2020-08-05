@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}  /*universal selector*/
+
+header{
+	/*to put a black layer for the background image*/
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/5.jpg);
+	/*background-image: url(../images/5.jpg);*/
+	height: 100vh ;
+	background-size: cover;
+	background-position: center;	
+} 
+
+h5 {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+.pagetitle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.pagetitle h1 {
+	color: #fff;
+	font-size: 50px;
+	/*font-family: verdana ;*/
+}
+
+.buttonpositioning {
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.buttonstyling {
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	transition: 0.9s ease;
+}
+
+.buttonstyling:hover {
+	background-color: #fff;
+	color: #000;
+}
