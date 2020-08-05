@@ -32,7 +32,7 @@
         <div class="buttonpositioning">
             <span><a href="loginAdmin.jsp" class="buttonstyling">Admin Login</a></span>
             <span><a href="registration.jsp" class="buttonstyling">Register</a></span>
-            <span><a href="" class="buttonstyling">User Login</a></span>
+            <span><a href="loginUser.jsp" class="buttonstyling">User Login</a></span>
         </div>
 
     </body>

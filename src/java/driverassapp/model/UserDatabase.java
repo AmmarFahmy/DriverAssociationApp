@@ -7,6 +7,7 @@ package driverassapp.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -45,6 +46,26 @@ public class UserDatabase {
         }
         
         return set;
+    }
+    
+    public User logUser (String username, String password) {
+        
+        User user = null;
+        try {
+            String query = "select * from admin where username=? and password=?";
+            PreparedStatement pst = this.con.prepareStatement(query);
+            pst.setString(1, username);
+            pst.setString(2, password);
+            
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                user = new User();
+            }
+        }
+        catch (SQLException e) {
+        }
+        
+        return user;
     }
     
 }
