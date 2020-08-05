@@ -165,7 +165,8 @@ body {
     font-size: 15px;
 }
 
-.regbox input[type="submit"] {
+.regbox input[type="submit"],
+.regbox input[type="button"]{
     display: block;
     border: none;
     outline: none;
@@ -176,7 +177,8 @@ body {
     border-radius: 20px;
 }
 
-.regbox input[type="submit"]:hover {
+.regbox input[type="submit"]:hover,
+.regbox input[type="button"]:hover{
     border: none;
     outline: none;
     height: 35px;

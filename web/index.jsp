@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : Aug 4, 2020, 11:59:58 PM
+    Created on : Aug 5, 2020, 12:21:06 PM
     Author     : ammar
 --%>
 
@@ -9,11 +9,31 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>JSP Page</title>
+        <title>Home</title>
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <link href="css/IndexPageStyle.css" type="text/css" rel="stylesheet" media="all">
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
     </head>
+
     <body>
-        <h1>Hello World!</h1><br>
-        <a href="registration.jsp">Click here to Register !!</a>
+
+        <header>
+            <div class="main"></div>
+        </header>
+
+        <div class="pagetitle">
+            <b><h1>Drivers Association</h1></b>
+        </div>
+
+        <div class="buttonpositioning">
+            <span><a href="loginAdmin.jsp" class="buttonstyling">Admin Login</a></span>
+            <span><a href="registration.jsp" class="buttonstyling">Register</a></span>
+            <span><a href="" class="buttonstyling">User Login</a></span>
+        </div>
+
     </body>
 </html>
