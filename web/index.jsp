@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Driver Association</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home</title>
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
