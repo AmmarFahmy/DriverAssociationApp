@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="YooKits" />
   <!-- Page Title -->
-  <title>Admin Dashboard</title>
+  <title>Driver Association</title>
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/favicon.png">
   <!-- CSS -->
@@ -276,102 +276,7 @@
         </div>
         <!-- .col -->
 
-        <div class="col-lg-4">
-          <div class="yoo-card yoo-style1">
-            <div class="yoo-card-heading">
-              <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-purple-bg"><ion-icon name="flask" role="img" class="md hydrated" aria-label="flask"></ion-icon></span>New Users</h2>
-              </div>
-            </div>
-            <div class="yoo-card-body">
-              <div class="yoo-padd-lr-20">
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-                <ul class="yoo-list-group yoo-style1 yoo-type1 yoo-mp0">
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/9.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Deborah Clarke</h2>
-                        <div class="yoo-media-subtitle">dc@gmail.com</div>
-                      </div>
-                      <span class="badge badge-success">SignUp</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/10.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Jay Bryant</h2>
-                        <div class="yoo-media-subtitle">jb@gmail.com</div>
-                      </div>
-                      <span class="badge badge-success">SignUp</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/11.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Rita Parks</h2>
-                        <div class="yoo-media-subtitle">rp@gmail.com</div>
-                      </div>
-                      <span class="badge badge-primary">Subscribe</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/12.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Eula Bailey</h2>
-                        <div class="yoo-media-subtitle">eb@gmail.com</div>
-                      </div>
-                      <span class="badge badge-success">SignUp</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/13.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Darin Osborne</h2>
-                        <div class="yoo-media-subtitle">do@gmail.com</div>
-                      </div>
-                      <span class="badge badge-primary">Subscribe</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1 yoo-type1">
-                      <div class="yoo-media-img">
-                        <div class="yoo-box-md yoo-radious10 yoo-img-box yoo-purple-box"><img src="assets/img/user/14.png" alt=""></div>
-                      </div>
-                      <div class="yoo-media-meta">
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h2 class="yoo-media-title yoo-margin-bottom-0 yoo-margin-top-2">Jay Bryant</h2>
-                        <div class="yoo-media-subtitle">jb@gmail.com</div>
-                      </div>
-                      <span class="badge badge-success">SignUp</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-              </div>
-            </div>
-          </div><!-- .yoo-card -->
-          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
-        </div> <!-- .col -->
+        
         <div class="col-lg-12">
           <div class="yoo-card yoo-style1">
             <div class="yoo-card-heading">
@@ -792,217 +697,17 @@
           </div><!-- .yoo-card -->
           <div class="yoo-height-b30 yoo-height-lg-b30"></div>
         </div><!-- .col -->
-        <div class="col-lg-4">
-          <div class="yoo-card yoo-style1">
-            <div class="yoo-card-heading">
-              <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-green-bg"><ion-icon name="cube"></ion-icon></span>PRODUCTS</h2>
-              </div>
-            </div>
-            <div class="yoo-card-body">
-              <div class="yoo-padd-lr-20">
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-                <ul class="yoo-list-group yoo-style1 yoo-mp0">
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/01.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">iPhone 11 Pro Max</h2>
-                        <div class="yoo-media-subtitle">Phone</div>
-                      </div>
-                      <span class="yoo-media-tag">$999</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/02.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">iPhone 11 Pro</h2>
-                        <div class="yoo-media-subtitle">Phone</div>
-                      </div>
-                      <span class="yoo-media-tag">$799</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/06.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">Watch Series 5</h2>
-                        <div class="yoo-media-subtitle">Watch</div>
-                      </div>
-                      <span class="yoo-media-tag">$659</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/04.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">Watch Series 5 Aluminum</h2>
-                        <div class="yoo-media-subtitle">Watch</div>
-                      </div>
-                      <span class="yoo-media-tag">$249</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/05.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">iPad Pro 12.9 (2017)</h2>
-                        <div class="yoo-media-subtitle">Pad</div>
-                      </div>
-                      <span class="yoo-media-tag">$499</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/02.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">iPhone 11</h2>
-                        <div class="yoo-media-subtitle">Phone</div>
-                      </div>
-                      <span class="yoo-media-tag">$499</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="yoo-medias yoo-style1">
-                      <div class="yoo-media-img"><img src="assets/img/product-img/02.png" alt=""></div>
-                      <div class="yoo-media-meta">
-                        <h2 class="yoo-media-title yoo-margin-bottom-0">iPhone 11 Pro</h2>
-                        <div class="yoo-media-subtitle">Phone</div>
-                      </div>
-                      <span class="yoo-media-tag">$799</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-              </div>
-            </div>
-          </div><!-- .yoo-card -->
-          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
-        </div><!-- .col -->
-        <div class="col-lg-4">
-          <div class="yoo-card yoo-style1">
-            <div class="yoo-card-heading">
-              <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-gray-bg"><ion-icon name="notifications"></ion-icon></span>Tasks List</h2>
-              </div>
-            </div>
-            <div class="yoo-card-body">
-              <div class="yoo-padd-lr-20">
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-                <ul class="yoo-task-list yoo-style1 yoo-mp0">
-                    <li>
-                      <div class="yoo-task-checkmark">
-                        <div class="yoo-switch yoo-style1"></div>
-                      </div>
-                      <div class="yoo-task-text">
-                        <span class="badge badge-secondary">SignUp</span>
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h3><a href="#">New Employee intro</a></h3>
-                        <div class="yoo-ativity-time"><ion-icon name="time" role="img" class="md hydrated" aria-label="time"></ion-icon> Scheduled For 3.00 PM on Jan 2019</div>
-                      </div>
-                      <div class="yoo-button-group yoo-style2">
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="build" role="img" class="md hydrated" aria-label="build"></ion-icon></a>
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="trash" role="img" class="md hydrated" aria-label="trash"></ion-icon></a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="yoo-task-checkmark">
-                        <div class="yoo-switch yoo-style1"></div>
-                      </div>
-                      <div class="yoo-task-text">
-                        <span class="badge badge-secondary">SignUp</span>
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h3><a href="#">Send email to CEO</a></h3>
-                        <div class="yoo-ativity-time"><ion-icon name="time" role="img" class="md hydrated" aria-label="time"></ion-icon> Scheduled For 3.00 PM on Jan 2019</div>
-                      </div>
-                      <div class="yoo-button-group yoo-style2">
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="build" role="img" class="md hydrated" aria-label="build"></ion-icon></a>
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="trash" role="img" class="md hydrated" aria-label="trash"></ion-icon></a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="yoo-task-checkmark">
-                        <div class="yoo-switch yoo-style1"></div>
-                      </div>
-                      <div class="yoo-task-text">
-                        <span class="badge badge-secondary">SignUp</span>
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h3><a href="#">New Joing Employee Welcome</a></h3>
-                        <div class="yoo-ativity-time"><ion-icon name="time" role="img" class="md hydrated" aria-label="time"></ion-icon> Scheduled For 3.00 PM on Jan 2019</div>
-                      </div>
-                      <div class="yoo-button-group yoo-style2">
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="build" role="img" class="md hydrated" aria-label="build"></ion-icon></a>
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="trash" role="img" class="md hydrated" aria-label="trash"></ion-icon></a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="yoo-task-checkmark">
-                        <div class="yoo-switch yoo-style1"></div>
-                      </div>
-                      <div class="yoo-task-text">
-                        <span class="badge badge-secondary">SignUp</span>
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h3>
-                          <a href="#">Birthday Wish</a>
-                        </h3>
-                        <div class="yoo-ativity-time"><ion-icon name="time" role="img" class="md hydrated" aria-label="time"></ion-icon> Scheduled For 3.00 PM on Jan 2019</div>
-                      </div>
-                      <div class="yoo-button-group yoo-style2">
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="build" role="img" class="md hydrated" aria-label="build"></ion-icon></a>
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="trash" role="img" class="md hydrated" aria-label="trash"></ion-icon></a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="yoo-task-checkmark">
-                        <div class="yoo-switch yoo-style1"></div>
-                      </div>
-                      <div class="yoo-task-text">
-                        <span class="badge badge-secondary">SignUp</span>
-                        <div class="yoo-height-b5 yoo-height-lg-b5"></div>
-                        <h3><a href="#">Send email to CEO</a></h3>
-                        <div class="yoo-ativity-time"><ion-icon name="time" role="img" class="md hydrated" aria-label="time"></ion-icon> Scheduled For 3.00 PM on Jan 2019</div>
-                      </div>
-                      <div class="yoo-button-group yoo-style2">
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="build" role="img" class="md hydrated" aria-label="build"></ion-icon></a>
-                        <a href="#" class="yoo-btn yoo-style4"><ion-icon name="trash" role="img" class="md hydrated" aria-label="trash"></ion-icon></a>
-                      </div>
-                    </li>
-                  </ul>
-                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
-              </div>
-            </div>
-          </div><!-- .yoo-card -->
-          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
-        </div><!-- .col -->
-        <div class="col-lg-4">
-          <div class="yoo-card yoo-style1">
-            <div class="yoo-card-heading">
-              <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-purple-bg"><ion-icon name="beer"></ion-icon></span>Employee Performance</h2>
-              </div>
-            </div>
-            <div class="yoo-card-body">
-              <div class="yoo-padd-lr-20">
-                <div class="yoo-performance-chart">
-                  <div id="yooChart7"></div>
-                </div>
-              </div>
-            </div>
-          </div><!-- .yoo-card -->
-          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
-        </div><!-- .col -->
       </div>
     </div>
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
     <footer class="yoo-footer yoo-style1">
       <div class="container-fluid">
         <div class="yoo-footer-content">
-          <div class="yoo-copyride">Made with coffee &amp; love by <a href="https://yookits.com/" target="_blank">YooKits</a> ©All rights reserved.</div>
+          
           <ul class="yoo-footer-nav yoo-mp0 yoo-flex">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -1015,10 +720,6 @@
   <script src="assets/js/smooth-scrollbar.js"></script>
   <script src="assets/js/apexcharts.min.js"></script>
   <script src="assets/js/apexcharts.initialize.js"></script>
-  <script src="assets/js/svg-maps/jquery.vmap.min.js"></script>
-  <script src="assets/js/svg-maps/jquery.vmap.usa.js"></script>
-  <script src="assets/js/svg-maps/jquery.vmap.main.js"></script>
-  <!-- <script src="assets/js/jquery.dataTables.min.js"></script> -->
   <script src="assets/js/iDashboard.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
