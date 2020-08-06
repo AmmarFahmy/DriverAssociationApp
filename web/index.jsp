@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Favicon Icon -->
+        <link rel="icon" href="assets/img/favicon.png">
 
         <link href="css/IndexPageStyle.css" type="text/css" rel="stylesheet" media="all">
         <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
