@@ -22,7 +22,7 @@
     <div class="yoo-main-header">
       <div class="yoo-main-header-in">
         <div class="yoo-main-header-left">
-          <a href="index.html" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg"
+          <a href="dashboard.jsp" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg"
               alt="logo-light" /></a>
           <!-- For Site Title -->
           <!-- <span class="yoo-site-title">
@@ -66,7 +66,7 @@
                       <ion-icon name="person-circle"></ion-icon>My Profile
                     </a>
                   </li>
-                  <li class="yoo-dropdown-cta"><a href="#">Sign Out</a></li>
+                  <li class="yoo-dropdown-cta"><a href="LogoutServlet">Sign Out</a></li>
                 </ul>
               </div>
             </li>
@@ -93,7 +93,7 @@
       <div class="yoo-sidebar-nav">
         <ul class="yoo-sidebar-nav-list yoo-mp0">
           <li class="active">
-            <a href="index.html">
+            <a href="dashboard.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1">
                   <ion-icon name="layers"></ion-icon>
@@ -103,7 +103,7 @@
             </a>
           </li>
           <li>
-            <a href="forms.html">
+            <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1">
                   <ion-icon name="duplicate"></ion-icon>
@@ -113,7 +113,7 @@
             </a>
           </li>
           <li>
-            <a href="documentation.html">
+            <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1">
                   <ion-icon name="reader"></ion-icon>
@@ -123,7 +123,7 @@
             </a>
           </li>
           <li>
-            <a href="calender.html">
+            <a href="calender.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1">
                   <ion-icon name="calendar"></ion-icon>
@@ -133,7 +133,7 @@
             </a>
           </li>
           <li>
-            <a href="tables.html">
+            <a href="tables.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1">
                   <ion-icon name="cube"></ion-icon>
@@ -153,14 +153,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html">
+                <a href="">
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">All Payments</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html">
+                <a href="">
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Outstanding Payments</span>
                   </span>
@@ -179,14 +179,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html">
+                <a href="registration.jsp">
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Register for a User</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html">
+                <a href="LogoutServlet">
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Sign Out</span>
                   </span>
