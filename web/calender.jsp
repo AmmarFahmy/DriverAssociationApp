@@ -24,7 +24,7 @@
     <div class="yoo-main-header">
       <div class="yoo-main-header-in">
         <div class="yoo-main-header-left">
-          <a href="index.html" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
+          <a href="dashboard.jsp" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
           <!-- For Site Title -->
           <!-- <span class="yoo-site-title">
             <a href="index.html">Logo</a>
@@ -37,7 +37,7 @@
             </div>
             <nav class="yoo-nav yoo-desktop-nav">
               <ul class="yoo-nav-list">
-                <li><a href="#"><ion-icon name="albums"></ion-icon> Home</a></li>
+                <li><a href="dashboard.jsp"><ion-icon name="albums"></ion-icon> Home</a></li>
                 <li><a href="#"><ion-icon name="cloud"></ion-icon> Contact</a></li>
               </ul>
             </nav>
@@ -60,7 +60,7 @@
                   <li>
                     <a href="#"><ion-icon name="person-circle"></ion-icon>My Profile</a>
                   </li>
-                  <li class="yoo-dropdown-cta"><a href="#">Sign Out</a></li>
+                  <li class="yoo-dropdown-cta"><a href="LogoutServlet">Sign Out</a></li>
                 </ul>
               </div>
             </li>
@@ -88,7 +88,7 @@
       <div class="yoo-sidebar-nav">
         <ul class="yoo-sidebar-nav-list yoo-mp0">
           <li class="active">
-            <a href="index.html">
+            <a href="dashboard.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="layers"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Admin Dashboard</span>
@@ -96,7 +96,7 @@
             </a>
           </li>
           <li>
-            <a href="forms.html">
+            <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">User Approvals</span>
@@ -104,7 +104,7 @@
             </a>
           </li>
           <li>
-            <a href="documentation.html" >
+            <a href="" >
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="reader"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Report Generation</span>
@@ -112,7 +112,7 @@
             </a>
           </li>
           <li>
-            <a href="calender.html">
+            <a href="calender.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="calendar"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Calender</span>
@@ -120,7 +120,7 @@
             </a>
           </li>
           <li>
-            <a href="tables.html">
+            <a href="tables.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Table</span>
@@ -136,14 +136,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html" >
+                <a href="" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">All Payments</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html" >
+                <a href="" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Outstanding Payments</span>
                   </span>
@@ -160,14 +160,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html" >
+                <a href="registration.jsp" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Register for a User</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html" >
+                <a href="LogoutServlet" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Sign Out</span>
                   </span>
