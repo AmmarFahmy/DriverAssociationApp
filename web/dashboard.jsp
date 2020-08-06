@@ -23,7 +23,7 @@
     <div class="yoo-main-header">
       <div class="yoo-main-header-in">
         <div class="yoo-main-header-left">
-          <a href="index.html" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
+          <a href="dashboard.jsp" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
           <!-- For Site Title -->
           <!-- <span class="yoo-site-title">
             <a href="index.html">Logo</a>
@@ -36,8 +36,8 @@
             </div>
             <nav class="yoo-nav yoo-desktop-nav">
               <ul class="yoo-nav-list">
-                <li><a href="#"><ion-icon name="albums"></ion-icon> Home</a></li>
-                <li><a href="#"><ion-icon name="cloud"></ion-icon> Contact</a></li>
+                <li><a href="dashboard.jsp"><ion-icon name="albums"></ion-icon> Home</a></li>
+                <li><a href="#"><ion-icon name="cloud"></ion-icon> Contact Us</a></li>
               </ul>
             </nav>
             <!-- .yoo-nav -->
@@ -61,7 +61,7 @@
                   <li>
                     <a href=""><ion-icon name="person-circle"></ion-icon>My Profile</a>
                   </li>
-                  <li class="yoo-dropdown-cta"><a href="">Sign Out</a></li>
+                  <li class="yoo-dropdown-cta"><a href="LogoutServlet">Sign Out</a></li>
                 </ul>
               </div>
             </li>
@@ -90,7 +90,7 @@
       <div class="yoo-sidebar-nav">
         <ul class="yoo-sidebar-nav-list yoo-mp0">
           <li class="active">
-            <a href="index.html">
+            <a href="dashboard.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="layers"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Admin Dashboard</span>
@@ -98,7 +98,7 @@
             </a>
           </li>
           <li>
-            <a href="forms.html">
+            <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">User Approvals</span>
@@ -106,7 +106,7 @@
             </a>
           </li>
           <li>
-            <a href="documentation.html" >
+            <a href="" >
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="reader"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Report Generation</span>
@@ -114,7 +114,7 @@
             </a>
           </li>
           <li>
-            <a href="calender.html">
+            <a href="calender.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="calendar"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Calender</span>
@@ -122,7 +122,7 @@
             </a>
           </li>
           <li>
-            <a href="tables.html">
+            <a href="tables.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
                 <span class="yoo-sidebar-link-text">Table</span>
@@ -138,14 +138,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html" >
+                <a href="" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">All Payments</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html" >
+                <a href="" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Outstanding Payments</span>
                   </span>
@@ -162,14 +162,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="login.html" >
+                <a href="registration.jsp" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Register for a User</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="signup.html" >
+                <a href="LogoutServlet" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Sign Out</span>
                   </span>
@@ -287,53 +287,6 @@
             <div class="yoo-card-body">
               <div class="">
                 <div>
-                  <div class="yoo-height-b15 yoo-height-lg-b15"></div>
-                  <div class="yoo-table-heading yoo-style1 yoo-padd-lr-20">
-                    <div class="yoo-table-heading-left">
-                      <form action="#" class="yoo-search yoo-style1 yoo-search-md">
-                        <input type="text" placeholder="Search..." class="yoo-search-input">
-                        <button class="yoo-search-submit"><ion-icon name="search"></ion-icon></button>
-                      </form>
-                    </div>
-                    <div class="yoo-table-heading-right">
-                      <ul class="yoo-table-heading-btn-list yoo-mp0">
-                        <li>
-                          <div class="yoo-page-number">15 of 31</div>
-                        </li>
-                        <li>
-                          <nav>
-                            <ul class="pagination">
-                              <li class="page-item active">
-                                <a class="page-link" href="#">
-                                  <span><ion-icon name="chevron-back"></ion-icon></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">
-                                  <span><ion-icon name="chevron-forward"></ion-icon></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </li>
-                        <li>
-                          <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" data-ripple="ripple" data-ripple-color="#666">Small button</button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                          </div>
-                        </li>
-                        <li>
-                          <button type="button" class="btn btn-primary btn-sm" data-ripple="ripple" data-ripple-color="#fff">Create New</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                   <div class="yoo-height-b15 yoo-height-lg-b15"></div>
                   <div class="yoo-table yoo-style1 yoo-type2">
                     <table class="table table-bordered">
