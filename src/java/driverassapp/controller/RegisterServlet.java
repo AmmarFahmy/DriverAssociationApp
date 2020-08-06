@@ -5,6 +5,7 @@
  */
 package driverassapp.controller;
 
+import Utilities.Auto_Generate;
 import driverassapp.controller.ConnectionPro;
 import driverassapp.model.User;
 import driverassapp.model.UserDatabase;
@@ -33,27 +34,37 @@ public class RegisterServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet RegisterServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet RegisterServlet at " + request.getContextPath() + "</h1>");
-            
-            //fetch data from registration.jsp page
+        
+        //fetch data from registration.jsp page
             String fullname = request.getParameter("fullname");
             String email = request.getParameter("email");
             String address = request.getParameter("address");
             String dob = request.getParameter("dob");
             String register = request.getParameter("register");
-            String password = request.getParameter("password");
+            String username = Auto_Generate.userKey(8, Auto_Generate.UPPERCASE + Auto_Generate.LOWERCASE);
+            String password = Auto_Generate.userKey(10, Auto_Generate.UPPERCASE + Auto_Generate.LOWERCASE + Auto_Generate.DIGITS + Auto_Generate.SPECIAL);
+
+        
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("<head>");
+                out.println("<title>Servlet RegisterServlet</title>");            
+                out.println("</head>");
+                out.println("<body>");
+////            out.println("<h1>Servlet RegisterServlet at " + request.getContextPath() + "</h1>");
+            
+            
+            out.println("<script type=\"text/javascript\">");
+            out.println("alert('You have been registered successfully! </br> Your Username : +" + username + "Password : +" + password + "');");
+            out.println("</script>");
+            response.sendRedirect("registration.jsp");  
             
             //make user object
-            User userModel = new User(fullname, email, address, dob, register, password);
+            User userModel = new User(fullname, email, address, dob, register, username, password);
             
             UserDatabase regUser = new UserDatabase(ConnectionPro.getConnection());
             if (regUser.saveUser(userModel)) {
