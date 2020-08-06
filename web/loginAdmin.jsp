@@ -10,9 +10,10 @@
     <head>
         <title>Driver Association</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Join Us</title>
         <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+            <!-- Favicon Icon -->
+            <link rel="icon" href="assets/img/favicon.png">
         
         <style>
             .box {
