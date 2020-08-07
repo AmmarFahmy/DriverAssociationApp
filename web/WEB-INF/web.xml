@@ -12,6 +12,10 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>driverassapp.controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServletUser</servlet-name>
+        <servlet-class>driverassapp.controller.LoginServletUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServletUser</servlet-name>
+        <url-pattern>/LoginServletUser</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
