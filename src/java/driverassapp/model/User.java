@@ -11,25 +11,25 @@ package driverassapp.model;
  */
 public class User {
     
-    int id;
     String fullname;
     String email;
     String address;
     String dob;
     String register;
     String password;
+    String membershipfee;
 
     public User() {
     }
-
-    public User(int id, String fullname, String email, String address, String dob, String register, String password) {
-        this.id = id;
+    
+    public User(String fullname, String email, String address, String dob, String register, String password, String membershipfee) {
         this.fullname = fullname;
         this.email = email;
         this.address = address;
         this.dob = dob;
         this.register = register;
         this.password = password;
+        this.membershipfee = membershipfee;
     }
 
     public User(String fullname, String email, String address, String dob, String register, String password) {
@@ -66,15 +66,8 @@ public class User {
         this.register = register;
         this.password = password;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    
+    
     public String getFullname() {
         return fullname;
     }
@@ -121,6 +114,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+    public String getMembershipfee() {
+        return membershipfee;
+    }
+
+    public void setMembershipfee(String membershipfee) {
+        this.membershipfee = membershipfee;
     }
     
 }
