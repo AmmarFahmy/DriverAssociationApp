@@ -42,7 +42,7 @@
           <!--      <p>Password</p>
                     <input type="password" placeholder="Password" name="password" required>  -->
 
-                    <input type="submit" value="Register">
+                    <input type="submit" onClick="makePayment" value="Register">
 
                     <a href="index.jsp">Already have an Account?</a>
                 </form>
