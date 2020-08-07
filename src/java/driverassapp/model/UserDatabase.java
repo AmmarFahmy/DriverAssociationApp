@@ -28,7 +28,7 @@ public class UserDatabase {
         boolean set = false;
         try{
            //Insert register data to database
-           String query = "insert into register(fullname,email,address,dob,register,password) values(?,?,?,?,?,?)";
+           String query = "insert into register(fullname,email,address,dob,register,password,membershipfee) values(?,?,?,?,?,?,?)";
            String query1 = "insert into users(email,password) values(?,?)";
            
            PreparedStatement pt = this.con.prepareStatement(query);
@@ -38,6 +38,7 @@ public class UserDatabase {
            pt.setString(4, user.getDob());
            pt.setString(5, user.getRegister());
            pt.setString(6, user.getPassword());
+           pt.setString(7, user.getMembershipfee());
            
            pt.executeUpdate();
            set = true;
