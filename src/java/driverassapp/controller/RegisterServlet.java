@@ -5,7 +5,6 @@
  */
 package driverassapp.controller;
 
-import driverassapp.controller.ConnectionPro;
 import driverassapp.model.User;
 import driverassapp.model.UserDatabase;
 import java.io.IOException;
