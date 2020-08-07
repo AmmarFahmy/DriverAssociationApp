@@ -50,9 +50,10 @@ public class RegisterServlet extends HttpServlet {
             String dob = request.getParameter("dob");
             String register = request.getParameter("register");
             String password = request.getParameter("password");
+            String membershipfee = request.getParameter("membershipfee");        
             
             //make user object
-            User userModel = new User(fullname, email, address, dob, register, password);
+            User userModel = new User(fullname, email, address, dob, register, password, membershipfee);
             
             UserDatabase regUser = new UserDatabase(ConnectionPro.getConnection());
             if (regUser.saveUser(userModel)) {
