@@ -121,14 +121,6 @@
               </span>
             </a>
           </li>
-          <li>
-            <a href="tables.jsp">
-              <span class="yoo-sidebar-link-title">
-                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
-                <span class="yoo-sidebar-link-text">Table</span>
-              </span>
-            </a>
-          </li>
           <li class="yoo-sidebar-has-children">
             <a href="#" >
               <span class="yoo-sidebar-link-title">
@@ -276,12 +268,36 @@
         </div>
         <!-- .col -->
 
+            <%@page import="java.sql.DriverManager"%>
+            <%@page import="java.sql.ResultSet"%>
+            <%@page import="java.sql.Statement"%>
+            <%@page import="java.sql.Connection"%>
+
+            <%
+            String id = request.getParameter("userId");
+            String driverName = "org.apache.derby.jdbc.EmbeddedDriver";
+            String connectionUrl = "jdbc:derby://localhost:1527/";
+            String dbName = "driverapp";
+            String userId = "ammar";
+            String password = "ammar";
+
+            try {
+            Class.forName(driverName);
+            } 
+            catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            }
+
+            Connection con = null;
+            Statement st = null;
+            ResultSet rs = null;
+            %>
         
         <div class="col-lg-12">
           <div class="yoo-card yoo-style1">
             <div class="yoo-card-heading">
               <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>DATA TABLE</h2>
+                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>USER DATA TABLE</h2>
               </div>
             </div>
             <div class="yoo-card-body">
@@ -298,360 +314,77 @@
                               <span class="yoo-last"></span>
                             </div>
                           </th>
-                          <th>Campaign Name
-                            <button class="yoo-table-info-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="information-circle"></ion-icon></button>
-                            <div class="dropdown-menu yoo-table-info-text">
-                              Is it more important for something to be subscriber-defined or to be compelling? Our technology takes the best features of XForms and OWL.
-                            </div>
-                          </th>
-                          <th>Single</th>
-                          <th class="yoo-arrow-wrap">Double</th>
-                          <th>Completion</th>
-                          <th>Users</th>
-                          <th>Tag</th>
-                          <th>Action</th>
+                          <th>Full Name</th>
+                          <th>Email</th>
+                          <th>Address</th>
+                          <th>Date of Birth</th>
+                          <th>Date of Registration</th>
+                          <th>Password</th>
+                          <th>Annual Membership Fee</th>
+                          <th>Paid/ Due</th>
                         </tr>
                       </thead>
+                        <%
+                        try{ 
+                        con = DriverManager.getConnection(connectionUrl+dbName, userId, password);
+                        st=con.createStatement();
+                        String sql ="SELECT * FROM register";
+
+                        rs = st.executeQuery(sql);
+                        while(rs.next()){
+                        %>                     
+                      
                       <tbody>
                         <tr>
                           <td>
                             <div class="yoo-check-mark"></div>
                           </td>
                           <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/gmail.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Instagram</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$60</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$70</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
+                              <span class="yoo-base-color1"><%=rs.getString("fullname") %></span>
                           </td>
                           <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">65%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
+                              <span class="yoo-base-color1"><%=rs.getString("email") %></span>
                           </td>
                           <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/7.jpg" alt="2"></a></li>
-                              <li><a href="#"><img src="assets/img/user/2.jpg" alt="4"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-success">Paid</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
+                            <span class="yoo-base-color1"><%=rs.getString("address") %></span>
                           </td>
                           <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/hangout.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Google Maps</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$60</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$60</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
+                            <span class="yoo-base-color1"><%=rs.getString("dob") %></span>
                           </td>
                           <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">85%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
+                            <span class="yoo-base-color1"><%=rs.getString("register") %></span>
                           </td>
                           <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/1.jpg" alt="1"></a></li>
-                              <li><a href="#"><img src="assets/img/user/7.jpg" alt="2"></a></li>
-                              <li><a href="#"><img src="assets/img/user/5.jpg" alt="4"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-success">Paid</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
+                              <span class="yoo-base-color1"><%=rs.getString("password") %></span>
                           </td>
                           <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/google.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Books</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$80</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$90</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
+                              <span class="yoo-base-color1"><%=rs.getString("membershipfee") %></span>
                           </td>
                           <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">95%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/4.jpg" alt="1"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-danger">Due</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
-                          </td>
-                          <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/gmail.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Gmail</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$70</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$50</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
-                          </td>
-                          <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">65%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/4.jpg" alt="1"></a></li>
-                              <li><a href="#"><img src="assets/img/user/7.jpg" alt="2"></a></li>
-                              <li><a href="#"><img src="assets/img/user/8.jpg" alt="4"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-danger">Due</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
-                          </td>
-                          <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/message.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Safari</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$70</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$60</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
-                          </td>
-                          <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">80%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/5.jpg" alt="2"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-success">Paid</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
-                          </td>
-                          <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/hangout.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Google Maps</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$120</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$100</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
-                          </td>
-                          <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">60%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/1.jpg" alt="1"></a></li>
-                              <li><a href="#"><img src="assets/img/user/2.jpg" alt="2"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-success">Paid</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="yoo-check-mark"></div>
-                          </td>
-                          <td>
-                            <div class="yoo-table-medias yoo-style1">
-                              <a href="#" class="yoo-media-img">
-                                <div class="yoo-box-sm yoo-radious5">
-                                  <img src="assets/img/nav-icon/mail.png" alt="">
-                                </div>
-                              </a>
-                              <h2 class="yoo-media-title yoo-margin-bottom-0"><a href="#">Mail</a></h2>
-                            </div>
-                          </td>
-                          <td><span class="yoo-base-color1">$80</span></td>
-                          <td>
-                            <div class="yoo-line-1-2 yoo-base-color1">$90</div>
-                            <div class="yoo-font-size-13 yoo-base-color2">Multiple Value</div>
-                          </td>
-                          <td>
-                            <div class="yoo-progress-wrap yoo-style3 yoo-type1">
-                              <div class="yoo-progress-head">
-                                <div class="yoo-progressbar-percentage">95%</div>
-                              </div>
-                              <div class="progress">
-                                <div class="progress-bar yoo-gray-bg" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <ul class="yoo-users yoo-style1 yoo-mp0">
-                              <li><a href="#"><img src="assets/img/user/4.jpg" alt="1"></a></li>
-                            </ul>
-                          </td>
-                          <td><span class="badge badge-danger">Due</span></td>
-                          <td>
-                            <button class="yoo-table-action-btn yoo-style1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">View</a>
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Delete</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Export</a>
-                            </div>
+                              <span class="badge badge-success">Paid</span>
+                              <span class="badge badge-danger">Due</span>
                           </td>
                         </tr>
                       </tbody>
+                        <% 
+                        }
+
+                        } catch (Exception e) {
+                        e.printStackTrace();
+                        }
+                        %>
                     </table>
                   </div>
                 </div>
               </div>
             </div>
           </div><!-- .yoo-card -->
+          
           <div class="yoo-height-b30 yoo-height-lg-b30"></div>
         </div><!-- .col -->
       </div>
     </div>
+    
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
     <footer class="yoo-footer yoo-style1">
       <div class="container-fluid">
