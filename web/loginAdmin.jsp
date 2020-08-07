@@ -33,7 +33,9 @@
 
         </style>
     </head>
+    
     <body>
+        
         <div class="container">
             <div class="box">
                 <img class="avatar" src="img/login.png">
@@ -53,5 +55,6 @@
                 </form>
             </div>
         </div>
+        
     </body>
 </html>
