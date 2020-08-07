@@ -43,15 +43,15 @@ public class LoginServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet LoginServlet at " + request.getContextPath() + "</h1>");
             
-            String logUserName = request.getParameter("username");
+            String logAdminName = request.getParameter("username");
             String logPass = request.getParameter("password");
             
             UserDatabase db =  new UserDatabase(ConnectionPro.getConnection());
-            User user = db.logUser(logUserName, logPass);
+            User user = db.logAdmin(logAdminName, logPass);
             
             if(user!=null){
                 HttpSession session = request.getSession();
-                session.setAttribute("logUser", user);
+                session.setAttribute("logAdmin", user);
                 response.sendRedirect("dashboard.jsp");
             }else{
                 out.println("No Admin Privilages Found");
