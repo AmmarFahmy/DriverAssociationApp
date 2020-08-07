@@ -121,14 +121,6 @@
               </span>
             </a>
           </li>
-          <li>
-            <a href="tables.jsp">
-              <span class="yoo-sidebar-link-title">
-                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
-                <span class="yoo-sidebar-link-text">Table</span>
-              </span>
-            </a>
-          </li>
           <li class="yoo-sidebar-has-children">
             <a href="#" >
               <span class="yoo-sidebar-link-title">
@@ -153,29 +145,13 @@
               </li>
             </ul>
           </li>
-          <li class="yoo-sidebar-has-children">
-            <a href="#" >
+          <li>
+            <a href="LogoutServlet">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="person-circle"></ion-icon></span>
-                <span class="yoo-sidebar-link-text">Admin Actions</span>
+                <span class="yoo-sidebar-link-text">Sign Out</span>
               </span>
             </a>
-            <ul class="yoo-sidebar-nav-dropdown">
-              <li>
-                <a href="registration.jsp" >
-                  <span class="yoo-sidebar-link-title">
-                    <span class="yoo-sidebar-link-text">Register for a User</span>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="LogoutServlet" >
-                  <span class="yoo-sidebar-link-title">
-                    <span class="yoo-sidebar-link-text">Sign Out</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
           </li>
         </ul><!-- .yoo-sidebar-nav-list -->
       </div>
