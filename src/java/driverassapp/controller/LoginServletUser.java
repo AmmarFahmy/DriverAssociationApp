@@ -52,6 +52,7 @@ public class LoginServletUser extends HttpServlet {
             if(user!=null){
                 HttpSession session = request.getSession();
                 session.setAttribute("logAdmin", user);
+                session.setMaxInactiveInterval(20*60);
                 response.sendRedirect("dashboardUser.jsp");
             }else{
                 out.println("No User Privilages Found");
