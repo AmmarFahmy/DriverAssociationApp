@@ -51,7 +51,7 @@
                 <div class="yoo-toggle-btn yoo-profile-nav-btn">
                   <div class="yoo-profile-nav-text">
                     <span>Welcome,</span>
-                    <h4>Admin</h4>
+                    <h4>${user.logAdminName}</h4>
                   </div>
                   <div class="yoo-profile-nav-img">
                     <img src="assets/img/profile-pic.png" alt="profile">
