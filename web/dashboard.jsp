@@ -25,9 +25,7 @@
         <div class="yoo-main-header-left">
           <a href="dashboard.jsp" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
           <!-- For Site Title -->
-          <!-- <span class="yoo-site-title">
-            <a href="index.html">Logo</a>
-          </span> -->
+          
         </div>
         <div class="yoo-main-header-right">
           <div class="yoo-nav-wrap yoo-fade-up">
