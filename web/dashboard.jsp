@@ -265,7 +265,8 @@
           <div class="yoo-height-b30 yoo-height-lg-b30"></div>
         </div>
         <!-- .col -->
-
+            
+<!--            //jsp codes -->
             <%@page import="java.sql.DriverManager"%>
             <%@page import="java.sql.ResultSet"%>
             <%@page import="java.sql.Statement"%>
@@ -290,7 +291,7 @@
             Statement st = null;
             ResultSet rs = null;
             %>
-        
+            
         <div class="col-lg-12">
           <div class="yoo-card yoo-style1">
             <div class="yoo-card-heading">
