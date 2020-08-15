@@ -119,14 +119,6 @@
               </span>
             </a>
           </li>
-          <li>
-            <a href="tables.jsp">
-              <span class="yoo-sidebar-link-title">
-                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
-                <span class="yoo-sidebar-link-text">Table</span>
-              </span>
-            </a>
-          </li>
           <li class="yoo-sidebar-has-children">
             <a href="#" >
               <span class="yoo-sidebar-link-title">
