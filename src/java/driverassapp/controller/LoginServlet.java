@@ -9,6 +9,7 @@ import driverassapp.model.User;
 import driverassapp.model.UserDatabase;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -44,10 +45,15 @@ public class LoginServlet extends HttpServlet {
             if(user!=null){
                 HttpSession session = request.getSession();
                 session.setAttribute("logAdmin", user);
+                session.setMaxInactiveInterval(20*60);
                 response.sendRedirect("dashboard.jsp");
-            }else{
-                out.println("No Admin Privilages Found");
-                //response.sendRedirect("loginAdmin.jsp");
+            }
+        
+            else {
+                RequestDispatcher rd = getServletContext().getRequestDispatcher("/loginAdmin.jsp");
+                //PrintWriter out = response.getWriter();
+                out.println("<font color=red>Either username or password is wrong.</font>");
+                rd.include(request, response);
             }
             
             out.println("</body>");
@@ -67,13 +73,30 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        // get request parameters for username and password
+//        String logAdminName = request.getParameter("username");
+//        String logPass = request.getParameter("password");
+//        
+//        UserDatabase db =  new UserDatabase(ConnectionPro.getConnection());
+//        User user = db.logAdmin(logAdminName, logPass);
+//
+//        if(user!=null){
+//                HttpSession session = request.getSession();
+//                session.setAttribute("logAdmin", user);
+//                session.setMaxInactiveInterval(20*60);
+//                response.sendRedirect("dashboard.jsp");
+//        }
+//        
+//        else {
+//            RequestDispatcher rd = getServletContext().getRequestDispatcher("/loginAdmin.jsp");
+//            PrintWriter out = response.getWriter();
+//            out.println("<font color=red>Either username or password is wrong.</font>");
+//            rd.include(request, response);
+//        }
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+    
     @Override
     public String getServletInfo() {
         return "Short description";
