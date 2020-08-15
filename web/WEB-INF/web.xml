@@ -37,4 +37,21 @@
             20
         </session-timeout>
     </session-config>
+    
+    <filter>
+        <filter-name>UserAuthenticationFilter</filter-name>
+        <filter-class>driverassapp.controller.UserAuthenticationFilter</filter-class>
+    </filter>    
+    <filter-mapping>
+        <filter-name>UserAuthenticationFilter</filter-name>
+        <servlet-name>LoginServletUser</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <filter-class>driverassapp.controller.AdminAuthenticationFilter</filter-class>
+    </filter>    
+    <filter-mapping>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <servlet-name>LoginServlet</servlet-name>
+    </filter-mapping>
 </web-app>
