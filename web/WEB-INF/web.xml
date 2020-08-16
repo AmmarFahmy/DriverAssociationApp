@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>driverassapp.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>driverassapp.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>driverassapp.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServletUser</servlet-name>
+        <servlet-class>driverassapp.controller.LoginServletUser</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServletUser</servlet-name>
+        <url-pattern>/LoginServletUser</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
-            30
+            15
         </session-timeout>
-    </session-config>
+    </session-config>    
+    <filter>
+        <filter-name>UserAuthenticationFilter</filter-name>
+        <filter-class>driverassapp.controller.UserAuthenticationFilter</filter-class>
+    </filter>    
+    <filter-mapping>
+        <filter-name>UserAuthenticationFilter</filter-name>
+        <servlet-name>LoginServletUser</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <filter-class>driverassapp.controller.AdminAuthenticationFilter</filter-class>
+    </filter>    
+    <filter-mapping>
+        <filter-name>AdminAuthenticationFilter</filter-name>
+        <servlet-name>LoginServlet</servlet-name>
+    </filter-mapping>
 </web-app>
