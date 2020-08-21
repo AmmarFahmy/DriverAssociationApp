@@ -49,7 +49,7 @@
                 <div class="yoo-toggle-btn yoo-profile-nav-btn">
                   <div class="yoo-profile-nav-text">
                     <span>Welcome,</span>
-                    <h4>${user.logAdminName}</h4>
+                    <h4>Admin</h4>
                   </div>
                   <div class="yoo-profile-nav-img">
                     <img src="assets/img/profile-pic.png" alt="profile">
@@ -128,14 +128,14 @@
             </a>
             <ul class="yoo-sidebar-nav-dropdown">
               <li>
-                <a href="" >
+                <a href="allPayments.jsp" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">All Payments</span>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="" >
+                <a href="outStandings.jsp" >
                   <span class="yoo-sidebar-link-title">
                     <span class="yoo-sidebar-link-text">Outstanding Payments</span>
                   </span>
