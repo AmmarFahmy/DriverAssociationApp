@@ -18,8 +18,20 @@ public class User {
     String register;
     String password;
     String membershipfee;
+    String paidorunpaid;
 
     public User() {
+    }
+    
+    public User(String fullname, String email, String address, String dob, String register, String password, String membershipfee, String paidorunpaid) {
+        this.fullname = fullname;
+        this.email = email;
+        this.address = address;
+        this.dob = dob;
+        this.register = register;
+        this.password = password;
+        this.membershipfee = membershipfee;
+        this.paidorunpaid = paidorunpaid;
     }
     
     public User(String fullname, String email, String address, String dob, String register, String password, String membershipfee) {
@@ -122,6 +134,14 @@ public class User {
 
     public void setMembershipfee(String membershipfee) {
         this.membershipfee = membershipfee;
+    }
+
+    public String getPaidorunpaid() {
+        return paidorunpaid;
+    }
+
+    public void setPaidorunpaid(String paidorunpaid) {
+        this.paidorunpaid = paidorunpaid;
     }
     
 }
