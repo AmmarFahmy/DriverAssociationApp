@@ -296,7 +296,7 @@
           <div class="yoo-card yoo-style1">
             <div class="yoo-card-heading">
               <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>USER DATA TABLE</h2>
+                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>USER INFORMATION TABLE</h2>
               </div>
             </div>
             <div class="yoo-card-body">
@@ -320,7 +320,7 @@
                           <th>Date of Registration</th>
                           <th>Password</th>
                           <th>Annual Membership Fee</th>
-                          <th>Paid/ Due</th>
+<!--                          <th>Paid/ Due</th>-->
                         </tr>
                       </thead>
                         <%
@@ -359,10 +359,10 @@
                           <td>
                               <span class="yoo-base-color1"><%=rs.getString("membershipfee") %></span>
                           </td>
-                          <td>
+<!--                          <td>
                               <span class="badge badge-success">Paid</span>
                               <span class="badge badge-danger">Due</span>
-                          </td>
+                          </td>-->
                         </tr>
                       </tbody>
                         <% 
