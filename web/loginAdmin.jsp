@@ -39,8 +39,8 @@
         <div class="container">
             <div class="box">
                 <img class="avatar" src="img/login.png">
-                <h1>Login Account</h1>
-                <form action="LoginServlet" method="post">
+                <h1>Login Admin Account</h1>
+                <form action="loginServlet" method="post">
                     <p>Username</p>
                     <input type="text" placeholder="Username" name="username" required>
                     
@@ -51,7 +51,6 @@
                     
                     <a href="#">Forgot Password?</a><br><br>
                     
-                    <a href="registration.jsp">Create New Account</a>
                 </form>
             </div>
         </div>
