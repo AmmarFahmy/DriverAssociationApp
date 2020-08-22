@@ -37,7 +37,7 @@
         <div class="container">
             <div class="box">
                 <img class="avatar" src="img/login.png">
-                <h1>Login Account</h1>
+                <h1>Login User Account</h1>
                 <form action="LoginServletUser" method="post">
                     <p>Email</p>
                     <input type="email" placeholder="Email" name="email" required>
