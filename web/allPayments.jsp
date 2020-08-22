@@ -17,7 +17,38 @@
   <link rel="stylesheet" type="text/css" href="assets/css/iDashboard.css" />
 </head>
 
+<div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Delete Teacher Record </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form action="deletecode-teachers.php" method="POST">
+
+        <div class="modal-body">
+
+          <input type="hidden" name="delete_id" id="delete_id">
+
+          <h4> Do you want to Delete this Data ??</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"> NO </button>
+          <button type="submit" name="deletedata" class="btn btn-primary"> Yes !! Delete it. </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
 <body>
+
+
+  
+    
   <div class="yoo-height-b60 yoo-height-lg-b60"></div>
   <header class="yoo-header yoo-style1 yoo-sticky-menu">
     <div class="yoo-main-header">
@@ -176,7 +207,7 @@
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
     <div class="container-fluid">
       <div class="yoo-uikits-heading">
-        <h2 class="yoo-uikits-title">Admin Dashboard</h2>
+        <h2 class="yoo-uikits-title">Payment Information</h2>
       </div>
     </div>
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
@@ -261,7 +292,7 @@
           <div class="yoo-card yoo-style1">
             <div class="yoo-card-heading">
               <div class="yoo-card-heading-left">
-                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>USER DATA TABLE</h2>
+                <h2 class="yoo-card-title"><span class="yoo-card-title-icon yoo-blue-bg"><ion-icon name="browsers"></ion-icon></span>USER PAYMENTS TABLE</h2>
               </div>
             </div>
             <div class="yoo-card-body">
@@ -280,19 +311,17 @@
                           </th>
                           <th>Full Name</th>
                           <th>Email</th>
-                          <th>Address</th>
-                          <th>Date of Birth</th>
                           <th>Date of Registration</th>
-                          <th>Password</th>
                           <th>Annual Membership Fee</th>
                           <th>Paid/ Due</th>
+                          <th>Make Payment</th>
                         </tr>
                       </thead>
                         <%
                         try{ 
                         con = DriverManager.getConnection(connectionUrl+dbName, userId, password);
                         st=con.createStatement();
-                        String sql ="SELECT * FROM register";
+                        String sql ="SELECT fullname, email, register, membershipfee, paidorunpaid from payment";
 
                         rs = st.executeQuery(sql);
                         while(rs.next()){
@@ -310,23 +339,17 @@
                               <span class="yoo-base-color1"><%=rs.getString("email") %></span>
                           </td>
                           <td>
-                            <span class="yoo-base-color1"><%=rs.getString("address") %></span>
-                          </td>
-                          <td>
-                            <span class="yoo-base-color1"><%=rs.getString("dob") %></span>
-                          </td>
-                          <td>
                             <span class="yoo-base-color1"><%=rs.getString("register") %></span>
-                          </td>
-                          <td>
-                              <span class="yoo-base-color1"><%=rs.getString("password") %></span>
                           </td>
                           <td>
                               <span class="yoo-base-color1"><%=rs.getString("membershipfee") %></span>
                           </td>
                           <td>
-                              <span class="badge badge-success">Paid</span>
-                              <span class="badge badge-danger">Due</span>
+<!--                              <span class="badge badge-success">Paid</span>-->
+                              <span class="badge badge-danger"><%=rs.getString("paidorunpaid") %></span>
+                          </td>
+                          <td>
+                              <button type="button" class="btn btn-primary btn-sm" data-ripple="ripple" data-ripple-color="#fff">Make Paid</button>
                           </td>
                         </tr>
                       </tbody>
