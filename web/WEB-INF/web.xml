@@ -16,6 +16,10 @@
         <servlet-name>LoginServletUser</servlet-name>
         <servlet-class>driverassapp.controller.LoginServletUser</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>driverassapp.controller.loginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
@@ -32,16 +36,19 @@
         <servlet-name>LoginServletUser</servlet-name>
         <url-pattern>/LoginServletUser</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             20
         </session-timeout>
     </session-config>
-    
     <filter>
         <filter-name>UserAuthenticationFilter</filter-name>
         <filter-class>driverassapp.controller.UserAuthenticationFilter</filter-class>
-    </filter>    
+    </filter>
     <filter-mapping>
         <filter-name>UserAuthenticationFilter</filter-name>
         <servlet-name>LoginServletUser</servlet-name>
@@ -49,7 +56,7 @@
     <filter>
         <filter-name>AdminAuthenticationFilter</filter-name>
         <filter-class>driverassapp.controller.AdminAuthenticationFilter</filter-class>
-    </filter>    
+    </filter>
     <filter-mapping>
         <filter-name>AdminAuthenticationFilter</filter-name>
         <servlet-name>LoginServlet</servlet-name>
