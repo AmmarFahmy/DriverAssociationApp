@@ -50,20 +50,21 @@ public class RegisterServlet extends HttpServlet {
             String dob = request.getParameter("dob");
             String register = request.getParameter("register");
             String password = request.getParameter("password");
-            String membershipfee = request.getParameter("membershipfee");        
+            String membershipfee = request.getParameter("membershipfee"); 
+            String paidorunpaid = request.getParameter("paidorunpaid");
             
-            //make user object
-            User userModel = new User(fullname, email, address, dob, register, password, membershipfee);
+            //make User object
+            User userModel = new User(fullname, email, address, dob, register, password, membershipfee, paidorunpaid);
             
             UserDatabase regUser = new UserDatabase(ConnectionPro.getConnection());
             if (regUser.saveUser(userModel)) {
-               response.sendRedirect("index.jsp");
+               response.sendRedirect("loginUser.jsp");
             } 
             else {
                 String errorMessage = "User Available";
                 HttpSession regSession = request.getSession();
                 regSession.setAttribute("RegError", errorMessage);
-                response.sendRedirect("register.jsp");
+                response.sendRedirect("index.jsp");
             }
             
             out.println("</body>");
