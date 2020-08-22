@@ -30,7 +30,9 @@ public class UserDatabase {
            //Insert register data to database
            String query = "insert into register(fullname,email,address,dob,register,password,membershipfee) values(?,?,?,?,?,?,?)";
            String query1 = "insert into users(email,password) values(?,?)";
+           String query2 = "insert into payment(fullname, email, register, membershipfee, paidorunpaid) values(?,?,?,?,?)";
            
+           //for query 
            PreparedStatement pt = this.con.prepareStatement(query);
            pt.setString(1, user.getFullname());
            pt.setString(2, user.getEmail());
@@ -43,11 +45,23 @@ public class UserDatabase {
            pt.executeUpdate();
            set = true;
            
+           //for query1
            PreparedStatement pt1 = this.con.prepareStatement(query1);
            pt1.setString(1, user.getEmail());
            pt1.setString(2, user.getPassword());
            
            pt1.executeUpdate();
+           set = true;
+           
+           //for query2
+           PreparedStatement pt2 = this.con.prepareStatement(query2);
+           pt2.setString(1, user.getFullname());
+           pt2.setString(2, user.getEmail());
+           pt2.setString(3, user.getRegister());
+           pt2.setString(4, user.getMembershipfee());
+           pt2.setString(5, user.getPaidorunpaid());
+           
+           pt2.executeUpdate();
            set = true;
         }
         
