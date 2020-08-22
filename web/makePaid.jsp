@@ -45,7 +45,7 @@
             try{ 
                 con = DriverManager.getConnection(connectionUrl+dbName, userId, password);
                 st=con.createStatement();
-                String sql ="update payment set membershipfee = 'RS. 0', paidorunpaid = 'Paid'";
+                String sql ="update payment set membershipfee = 'RS. 0', paidorunpaid = 'Paid' where fullname = 'ammar'";
 
                 rs = st.executeQuery(sql);
                 
