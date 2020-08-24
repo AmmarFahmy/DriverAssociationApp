@@ -96,6 +96,14 @@
             </a>
           </li>
           <li>
+            <a href="vRegistrationApprovals.jsp">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Vehicle Registration Approvals</span>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
@@ -176,7 +184,7 @@
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
     <div class="container-fluid">
       <div class="yoo-uikits-heading">
-        <h2 class="yoo-uikits-title">Admin Dashboard</h2>
+        <h2 class="yoo-uikits-title">Outstanding Payments</h2>
       </div>
     </div>
     <div class="yoo-height-b30 yoo-height-lg-b30"></div>
@@ -325,7 +333,7 @@
                               <span class="yoo-base-color1"><%=rs.getString("membershipfee") %></span>
                           </td>
                           <td>
-                              <span class="badge badge-success">Paid</span>
+<!--                              <span class="badge badge-success">Paid</span>-->
                               <span class="badge badge-danger">Due</span>
                           </td>
                         </tr>
