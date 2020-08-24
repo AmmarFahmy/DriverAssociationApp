@@ -127,6 +127,14 @@
             </a>
           </li>
           <li>
+            <a href="vRegistrationApprovals.jsp">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Vehicle Registration Approvals</span>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
@@ -349,7 +357,10 @@
                               <span class="badge badge-danger"><%=rs.getString("paidorunpaid") %></span>
                           </td>
                           <td>
-                              <button type="button" class="btn btn-primary btn-sm" data-ripple="ripple" data-ripple-color="#fff">Make Paid</button>
+                              <form action="allPaymentsController" method="post">
+                                  <input type="text" value="<%=rs.getString("email") %>" style="display: none;" name="uEmail"">
+                                  <input type="submit" value="Make Paid" class="btn btn-primary btn-sm" data-ripple="ripple" data-ripple-color="#fff" name="uMakePaid">
+                              </form>
                           </td>
                         </tr>
                       </tbody>
