@@ -51,7 +51,7 @@
                 <div class="yoo-toggle-btn yoo-profile-nav-btn">
                   <div class="yoo-profile-nav-text">
                     <span>Welcome,</span>
-                    <h4>${user.logUserName}</h4>
+                    <h4>User</h4>
                   </div>
                   <div class="yoo-profile-nav-img">
                     <img src="assets/img/profile-pic.png" alt="profile">
@@ -98,10 +98,10 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="vehicleRegistration.jsp">
               <span class="yoo-sidebar-link-title">
                 <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
-                <span class="yoo-sidebar-link-text">User Approvals</span>
+                <span class="yoo-sidebar-link-text">Vehicle Registration</span>
               </span>
             </a>
           </li>
