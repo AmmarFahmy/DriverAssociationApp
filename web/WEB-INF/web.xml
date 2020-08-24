@@ -20,6 +20,18 @@
         <servlet-name>loginServlet</servlet-name>
         <servlet-class>driverassapp.controller.loginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>allPaymentsController</servlet-name>
+        <servlet-class>driverassapp.controller.allPaymentsController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changedetails</servlet-name>
+        <servlet-class>driverassapp.controller.changedetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>vehicleRegistrationContoller</servlet-name>
+        <servlet-class>driverassapp.controller.vehicleRegistrationContoller</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/RegisterServlet</url-pattern>
@@ -39,6 +51,18 @@
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>allPaymentsController</servlet-name>
+        <url-pattern>/allPaymentsController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changedetails</servlet-name>
+        <url-pattern>/changedetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vehicleRegistrationContoller</servlet-name>
+        <url-pattern>/vehicleRegistrationContoller</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
