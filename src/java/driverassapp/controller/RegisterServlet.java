@@ -61,7 +61,7 @@ public class RegisterServlet extends HttpServlet {
                response.sendRedirect("loginUser.jsp");
             } 
             else {
-                String errorMessage = "User Available";
+                String errorMessage = "Kiyala Wedak Neh.. Something Went Wrong";
                 HttpSession regSession = request.getSession();
                 regSession.setAttribute("RegError", errorMessage);
                 response.sendRedirect("index.jsp");
