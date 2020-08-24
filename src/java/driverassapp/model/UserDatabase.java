@@ -113,4 +113,52 @@ public class UserDatabase {
         return user;
     }
     
+//    public User makePayment (String membershipfee, String paidorunpaid) {
+//        
+//        User user = null;
+//        
+//        try {
+//            String query = "update payment set ";
+//            PreparedStatement pst = this.con.prepareStatement(query);
+//            pst.setString(1, membershipfee);
+//            pst.setString(2, paidorunpaid);
+//            
+//            ResultSet rs = pst.executeQuery();
+//            if (rs.next()) {
+//                user = new User();
+//            }
+//        }
+//        catch (SQLException e) {
+//        }
+//        
+//        return user;
+//    }
+
+    public User makePayment(String membershipfee, String paidorunpaid, String uEmail) { 
+        boolean set = false;
+        User user = null;
+        try{
+           //Insert register data to database
+           String query = "update payment set membershipfee = ?, paidorunpaid = ? where email="+uEmail;
+           
+           //for query 
+           PreparedStatement pt = this.con.prepareStatement(query);
+           pt.setString(1, user.getMembershipfee());
+           pt.setString(2, user.getPaidorunpaid());
+           
+           pt.executeUpdate();
+           set = true;
+           
+        }
+        
+        catch(SQLException e){
+        }
+        
+        return user;
+    }
+
+    
+
+    
+    
 }
