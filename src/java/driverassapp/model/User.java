@@ -19,6 +19,7 @@ public class User {
     String password;
     String membershipfee;
     String paidorunpaid;
+    String uEmail;
 
     public User() {
     }
@@ -77,6 +78,18 @@ public class User {
     public User(String register, String password) {
         this.register = register;
         this.password = password;
+    }
+    
+    public User(String uEmail) {
+        this.uEmail = uEmail;
+    }
+
+    public String getuEmail() {
+        return uEmail;
+    }
+
+    public void setuEmail(String uEmail) {
+        this.uEmail = uEmail;
     }
     
     
